@@ -8,7 +8,7 @@ It can replace the upsamling layer in the networks and is easy to be integrated 
 CARAFE can be implemented in plain PyTorch code by `torch.nn.functional.unfold`. However, the `unfold` function reassembles the features within a local region to
 generate a large feature map, which causes memory problem and is slow when the input is large.
 
-CARAFE cuda extension can solve the memory problem and is ~10x faster than the code in plain PyTorch. More details can be referred to [test.py](test.py).
+CARAFE cuda extension can solve the memory problem and is **~10x** faster than the code in plain PyTorch. More details can be referred to [test.py](test.py).
 
 ## How To Use
 
@@ -16,6 +16,7 @@ CARAFE cuda extension can solve the memory problem and is ~10x faster than the c
 * Build
 
 ```shell
+cd carafe_layer/
 python setup.py build_ext --inplace
 ```
 * Test
