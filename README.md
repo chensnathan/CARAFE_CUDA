@@ -33,3 +33,5 @@ We replace the upsampling layers with [carafe_module](carafe_module.py) in Mask 
 | Baseline | 37.4/34.2 | 37.3/34.2 |
 | FPN w/ CARAFE | 38.6/35.2 | -/- |
 | FPN + M.H w/ CARAFE | 38.6/35.7 | -/- |
+
+NOTE: `M.H` represents `Mask Head` in Mask R-CNN.
