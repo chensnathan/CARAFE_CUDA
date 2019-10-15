@@ -37,7 +37,7 @@ def test2(input, kernel_map, kernel_size, up_factor=2):
 if __name__ == '__main__':
     input = torch.rand((2, 256, 100, 100)).cuda()
     kernel_map = torch.ones(2, 49, 200, 200).cuda()
-    kernel_size = (7, 7)
+    kernel_size = (5, 5)
     output1 = test1(input, kernel_map, kernel_size)
     output2 = test2(input, kernel_map, kernel_size)
     loss = torch.abs(output2 - output1).mean()

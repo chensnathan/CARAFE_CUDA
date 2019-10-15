@@ -39,7 +39,7 @@ class CARAFEModule(nn.Module):
                  in_channels,
                  upscale_factor,
                  compressed_channels=64,
-                 upsample_kernel_size=7):
+                 upsample_kernel_size=5):
         super(CARAFEModule, self).__init__()
         self.in_channels = in_channels
         self.upscale_factor = upscale_factor
